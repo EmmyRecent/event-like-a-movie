@@ -40,6 +40,10 @@
     @apply bg-[url(/src/assets/images/about-img.jpg)] bg-cover bg-center;
   }
 
+  .services-img {
+    @apply bg-[url(/src/assets/images/services-img.jpg)] bg-cover bg-center;
+  }
+
   .nav-link > li {
     @apply transition duration-200 ease-in;
   }
