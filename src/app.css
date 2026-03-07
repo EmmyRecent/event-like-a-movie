@@ -36,6 +36,10 @@
     @apply bg-[url(/src/assets/images/hero-img.jpg)] bg-cover bg-center;
   }
 
+  .about-img {
+    @apply bg-[url(/src/assets/images/about-img.jpg)] bg-cover bg-center;
+  }
+
   .nav-link > li {
     @apply transition duration-200 ease-in;
   }
