@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+/* Ensure root index.html and all HTML are scanned for Tailwind classes */
+@source "../*.html";
+@source "../**/*.html";
+
+@theme {
+  /* Color */
+  --color-highlight: #8e43f0;
+  --color-darkGray: #584d66;
+
+  /* Fonts */
+  --font-inter: "inter", sans-serif;
+  --font-brygada: "Brygada 1918", serif;
+}
+
+@layer components {
+  .wrapper {
+    width: min(1432px, calc(100% - 32px));
+    margin-inline: auto;
+  }
+
+  .wrapper-container {
+    width: min(1200px, calc(100% - 32px));
+    margin-inline: auto;
+  }
+
+  .nav-container {
+    width: min(1200px, calc(32px - 100%));
+    margin-inline: auto;
+  }
+
+  .hero-img {
+    @apply bg-[url(/src/assets/images/hero-img.jpg)] bg-cover bg-center;
+  }
+
+  .nav-link > li {
+    @apply transition duration-200 ease-in;
+  }
+}
+
+@layer utilities {
+}
+
+@layer base {
+  body {
+    @apply font-inter min-h-screen bg-white;
+  }
+
+  section {
+    @apply flex min-h-screen flex-col items-center justify-center py-28 text-white md:py-32;
+  }
+}

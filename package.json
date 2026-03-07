@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./src/app.css -o ./dist/output.css --watch",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

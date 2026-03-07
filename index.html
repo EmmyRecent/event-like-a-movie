@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>EventLikeaMovie</title>
+  </head>
+
+  <body>
+    <div class="hero-img min-h-screen">
+      <header class="wrapper">
+        <nav class="flex items-center justify-between py-8 md:py-10">
+          <div class="flex items-center justify-center">
+            <a href="/">
+              <img
+                src="./src/assets/images/logo.png"
+                alt="EventLikeaMovie Logo"
+                width="117"
+                height="57"
+                class="mr-20 w-full max-w-24 cursor-pointer md:max-w-28"
+              />
+            </a>
+
+            <ul
+              class="[&>li]:hover:text-highlight nav-link hidden gap-10 md:flex [&>li]:cursor-pointer [&>li]:text-[13px] [&>li]:text-[#FFFFFFB8] [&>li]:uppercase"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Streams</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social media icon: Instagram -->
+          <a
+            href="https://www.instagram.com/eventlikeamovie/"
+            class="hidden cursor-pointer md:block"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram-icon lucide-instagram"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </a>
+
+          <div class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero  -->
+      <section>
+        <div
+          class="wrapper-container flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-start"
+        >
+          <h6 class="font-brygada mb-6 text-sm uppercase">Welcome</h6>
+
+          <h1
+            class="font-brygada mb-6 w-[10ch] text-[60px] leading-20 sm:text-[70px] md:text-[88px]"
+          >
+            HD Event Live Stream
+          </h1>
+
+          <p class="mb-6 text-xl md:w-[45ch]">
+            Give your guests a front-row experience at every event, even while
+            viewing from the comfort of their home.
+          </p>
+
+          <button
+            class="hover:border-whites hero-button group mx-auto mr-auto flex cursor-pointer items-center justify-center gap-4 border bg-white px-8 py-4 transition-all duration-300 ease-in-out hover:bg-transparent md:mx-0"
+          >
+            <span
+              class="text-[12px] font-medium tracking-[2px] text-black uppercase transition-colors duration-300 group-hover:text-white"
+            >
+              Make a booking
+            </span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="h-6 w-6 stroke-black transition-all duration-300 group-hover:stroke-white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Experience  -->
+    <section>
+      <div class="wrapper-container flex flex-col gap-10">
+        <h6
+          class="text-highlight font-brygada text-center text-[12px] font-medium tracking-[3px] uppercase"
+        >
+          Experience
+        </h6>
+
+        <h2
+          class="font-brygada mb-8 text-center text-2xl font-medium text-black md:text-3xl lg:text-4xl"
+        >
+          Live Stream on Steriods
+        </h2>
+
+        <div class="aspect-video w-full">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/391DG3ZgTK4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-8 text-black max-md:text-center md:grid-cols-3"
+        >
+          <div class="flex flex-col gap-4">
+            <svg
+              aria-hidden="true"
+              class="fill-highlight h-6 w-6 max-md:mx-auto"
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"
+              ></path>
+            </svg>
+
+            <h4 class="font-brygada text-xl font-medium md:text-2xl">
+              Consult
+            </h4>
+
+            <p class="text-darkGray text-sm md:text-base">
+              Our goal is to understand your unique event requirements, to
+              provide bespoke wireless live stream services for you and your
+              guests.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <svg
+              aria-hidden="true"
+              class="fill-highlight h-6 w-6 max-md:mx-auto"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M384 64H192C86 64 0 150 0 256s86 192 192 192h192c106 0 192-86 192-192S490 64 384 64zm0 320c-70.8 0-128-57.3-128-128 0-70.8 57.3-128 128-128 70.8 0 128 57.3 128 128 0 70.8-57.3 128-128 128z"
+              ></path>
+            </svg>
+
+            <h4 class="font-brygada font-medium md:text-2xl">Activate</h4>
+
+            <p class="text-darkGray text-sm md:text-base">
+              We deploy the latest technology to ensure you get value for money,
+              and are hands on for a seamless event experience.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <svg
+              aria-hidden="true"
+              class="fill-highlight h-6 w-6 max-md:mx-auto"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 128h416c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16H16C7.16 32 0 39.16 0 48v64c0 8.84 7.16 16 16 16zm480 80H80c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm-64 176H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16z"
+              ></path>
+            </svg>
+
+            <h4 class="font-brygada text-xl font-medium md:text-2xl">Stream</h4>
+
+            <p class="text-darkGray text-sm md:text-base">
+              Your guests will enjoy a premium audio/visual experience, watching
+              from any location in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work   -->
+    <section class="relative">
+      <div
+        class="absolute inset-0 bg-[#e6f0ee] lg:left-auto lg:w-1/2 lg:rounded-l-[100px]"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="wrapper-container relative flex flex-col max-sm:gap-10 md:gap-6 lg:flex-row"
+      >
+        <div class="flex flex-col gap-5">
+          <h2
+            class="font-brygada font-meduim text-2xl font-medium text-black capitalize md:text-3xl lg:text-4xl"
+          >
+            How we work
+          </h2>
+
+          <p class="text-darkGray text-[15px] md:text-base">
+            We are a premium HD Livestream experience company that caters to
+            your online streaming needs.
+          </p>
+
+          <button
+            class="group mr-auto mb-4 flex cursor-pointer items-center justify-center gap-4 border bg-[#150e1f] px-8 py-4 transition-all duration-300 ease-in-out hover:border-[#150e1f] hover:bg-transparent"
+          >
+            <span
+              class="text-[12px] font-medium tracking-[2px] text-white uppercase transition-colors duration-300 group-hover:text-[#150e1f]"
+            >
+              Book Now
+            </span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="h-6 w-6 stroke-white transition-all duration-300 group-hover:stroke-black"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="items-start justify-center gap-4 md:flex md:gap-6">
+          <img
+            class="h-auto w-full rounded-3xl object-cover md:w-1/2 lg:w-87.5"
+            src="./src/assets/images/work.jpg"
+            width="500"
+            height="500"
+            alt="How we work"
+          />
+
+          <div>
+            <div
+              class="border-darkGray/25 mt-8 mb-12 w-full border-[0.2px] md:mt-0"
+            ></div>
+
+            <div class="flex flex-col gap-4">
+              <h6 class="text-highlight text-[12px] font-medium">01</h6>
+
+              <h4
+                class="font-brygada text-2xl font-medium text-black md:text-[26px]"
+              >
+                Custom Made Website
+              </h4>
+
+              <p class="text-darkGray text-sm md:text-base">
+                We create a custom webpage, which you can share with guests, to
+                view pictures and experience your event countdown.
+              </p>
+            </div>
+
+            <div class="border-darkGray/25 my-12 w-full border-[0.2px]"></div>
+
+            <div class="flex flex-col gap-4">
+              <h6 class="text-highlight text-[12px] font-medium">02</h6>
+
+              <h4
+                class="font-brygada text-2xl font-medium text-black md:text-[26px]"
+              >
+                RSVP and Invite
+              </h4>
+
+              <p class="text-darkGray text-sm md:text-base">
+                Your guests RSVP and will receive an event streaming link, which
+                grants them access to watch your event ceremony
+              </p>
+            </div>
+
+            <div class="border-darkGray/25 my-12 w-full border-[0.2px]"></div>
+
+            <div class="flex flex-col gap-4">
+              <h6 class="text-highlight text-[12px] font-medium">03</h6>
+
+              <h4
+                class="font-brygada text-2xl font-medium text-black md:text-[26px]"
+              >
+                Click to Enter
+              </h4>
+
+              <p class="text-darkGray text-sm md:text-base">
+                On your big day, guests simply have to click on the links sent
+                via webmail and enjoy premium front row viewing of your event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured streams  -->
+    <section
+      class="relative bg-[#6d645b] bg-[url(/src/assets/images/featured.jpg)] bg-cover bg-center"
+    >
+      <div class="wrapper-container">
+        <div class="flex w-full flex-col gap-14">
+          <div class="flex flex-col gap-3 text-center">
+            <h6
+              class="font-brygada text-[13px] tracking-[3px] text-white uppercase md:mb-2 md:text-sm"
+            >
+              Have a Look at Our
+            </h6>
+
+            <h2
+              class="font-brygada text-2xl font-medium text-white md:text-4xl lg:text-[48px]"
+            >
+              Featured Streams
+            </h2>
+
+            <p class="text-sm text-white/70 md:text-base">
+              and relive moments from your special day
+            </p>
+          </div>
+
+          <div class="grid w-full grid-cols-1 md:grid-cols-2">
+            <div class="flex w-full flex-col gap-4 border border-white/20 p-9">
+              <h6 class="font-brygada mb-5 text-xs md:text-sm">01.</h6>
+
+              <h3 class="font-brygada text-2xl md:text-3xl lg:text-4xl">
+                Bimbo & Temi Ceremony
+              </h3>
+
+              <p class="text-sm text-white/80 md:text-base">
+                Watch the live stream of Bimbo & Temi
+              </p>
+
+              <div class="aspect-video w-full">
+                <iframe
+                  class="h-full w-full"
+                  src="https://www.youtube.com/watch?v=jXcPV8oiVI0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <a href="#" class="group flex items-center gap-2">
+                <span
+                  class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
+                  >Book yours now</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-6 w-6 stroke-white/80 transition-all duration-300 group-hover:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex w-full flex-col gap-4 border border-white/20 p-9">
+              <h6 class="font-brygada mb-5 text-xs md:text-sm">02.</h6>
+
+              <h3 class="font-brygada text-2xl md:text-3xl lg:text-4xl">
+                Dara & Tosin Ceremony
+              </h3>
+
+              <p class="text-sm text-white/80 md:text-base">
+                Watch the live stream of Dara & Tosin
+              </p>
+
+              <div class="aspect-video w-full">
+                <iframe
+                  class="h-full w-full"
+                  src="https://www.youtube.com/watch?v=x-yD-Dyqxro&embeds_referring_euri=https%3A%2F%2Feventlikeamovie.ng%2F&embeds_referring_origin=https%3A%2F%2Feventlikeamovie.ng&source_ve_path=MjM4NTE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <a href="#" class="group flex items-center gap-2">
+                <span
+                  class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
+                  >Book yours now</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-6 w-6 stroke-white/80 transition-all duration-300 group-hover:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex w-full flex-col gap-4 border border-white/20 p-9">
+              <h6 class="font-brygada mb-5 text-xs md:text-sm">03.</h6>
+
+              <h3 class="font-brygada text-2xl md:text-3xl lg:text-4xl">
+                Dayo & Tosin Ceremony
+              </h3>
+
+              <p class="text-sm text-white/80 md:text-base">
+                Watch the live stream of Dara & Tosin
+              </p>
+
+              <div class="aspect-video w-full">
+                <iframe
+                  class="h-full w-full"
+                  src="https://www.youtube.com/watch?v=_zytuXi13_8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <a href="#" class="group flex items-center gap-2">
+                <span
+                  class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
+                  >Book yours now</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-6 w-6 stroke-white/80 transition-all duration-300 group-hover:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex w-full flex-col gap-4 border border-white/20 p-9">
+              <h6 class="font-brygada mb-5 text-xs md:text-sm">04.</h6>
+
+              <h3 class="font-brygada text-2xl md:text-3xl lg:text-4xl">
+                Gbemi & Chuka Wedding
+              </h3>
+
+              <p class="text-sm text-white/80 md:text-base">
+                Watch the live stream of Gbemi & Chuka
+              </p>
+
+              <div class="aspect-video w-full">
+                <iframe
+                  class="h-full w-full"
+                  src="https://www.youtube.com/watch?v=jXcPV8oiVI0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <a href="#" class="group flex items-center gap-2">
+                <span
+                  class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
+                  >Book yours now</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-6 w-6 stroke-white/80 transition-all duration-300 group-hover:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section>
+      <div class="wrapper-container">
+        <div
+          class="flex w-full flex-col items-start justify-between gap-10 md:flex-row md:gap-6"
+        >
+          <div class="flex flex-1 flex-col gap-4">
+            <h6
+              class="text-highlight font-brygada text-[12px] font-medium tracking-[3px] uppercase"
+            >
+              What Are You Waiting For...
+            </h6>
+
+            <h2
+              class="font-brygada text-2xl font-medium text-black md:text-[36px] lg:text-[48px]"
+            >
+              Make an appointment
+            </h2>
+
+            <p class="text-[15px] text-black md:text-base">
+              Let’s help you curate the perfect Live Stream bundle for your
+              special event.
+            </p>
+
+            <div>
+              <div class="flex flex-col justify-center gap-3">
+                <svg
+                  aria-hidden="true"
+                  class="fill-highlight h-4 w-4"
+                  viewBox="0 0 384 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+
+                <h6
+                  class="font-brygada text-[13px] font-medium tracking-[3px] text-black uppercase md:text-sm"
+                >
+                  Our Location
+                </h6>
+
+                <p class="text-darkGray text-[15px] md:text-base">
+                  24, Floodgate street, Lagos
+                </p>
+              </div>
+
+              <div class="border-darkGray/25 my-10 w-full border-[0.2px]"></div>
+
+              <div class="flex flex-col justify-center gap-3">
+                <svg
+                  aria-hidden="true"
+                  class="fill-highlight h-4 w-4"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"
+                  ></path>
+                </svg>
+
+                <h6
+                  class="font-brygada text-[13px] font-medium tracking-[3px] text-black uppercase md:text-[14px]"
+                >
+                  Opening Hours
+                </h6>
+
+                <p class="text-darkGray text-[15px] md:text-base">
+                  24, Floodgate street, Lagos
+                </p>
+
+                <div class="gap-0">
+                  <p class="text-darkGray text-[15px]">Mon-Fri: 9am-5pm</p>
+
+                  <p class="text-darkGray text-[15px]">Sat-Sun: 12pm-3pm</p>
+                </div>
+              </div>
+
+              <div class="border-darkGray/25 my-10 w-full border-[0.2px]"></div>
+
+              <div class="flex flex-col justify-center gap-3">
+                <svg
+                  aria-hidden="true"
+                  class="fill-highlight h-4 w-4"
+                  viewBox="0 0 616 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
+                  ></path>
+                </svg>
+
+                <h6
+                  class="font-brygada text-[13px] font-medium tracking-[3px] text-black uppercase md:text-[14px]"
+                >
+                  Contact
+                </h6>
+
+                <div class="gap-0">
+                  <p class="text-darkGray text-[15px]">
+                    Phone: +234 911 098 4650
+                  </p>
+
+                  <p class="text-darkGray text-[15px]">
+                    Email: eventlikeamovie@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form
+            action="#"
+            class="flex w-full flex-1 flex-col justify-center gap-4 md:pt-14"
+          >
+            <div class="flex flex-col gap-3 text-black">
+              <label
+                for="name"
+                class="text-sm font-medium capitalize md:text-base"
+                >Name: <span class="text-red-400">*</span></label
+              >
+              <input type="text" class="w-full border border-black p-3" />
+            </div>
+
+            <div class="flex flex-col gap-3 text-black">
+              <label
+                for="Email"
+                class="text-sm font-medium capitalize md:text-base"
+                >Email: <span class="text-red-400">*</span></label
+              >
+              <input type="email" class="w-full border border-black p-3" />
+            </div>
+
+            <div class="flex flex-col gap-3 text-black">
+              <label
+                for="Message"
+                class="text-sm font-medium capitalize md:text-base"
+                >Message: <span class="text-red-400">*</span></label
+              >
+              <textarea
+                name="Message"
+                id="#"
+                cols="4"
+                class="w-full border border-black p-3"
+              ></textarea>
+              <p class="text-darkGray text-sm">Tell use about your request</p>
+            </div>
+
+            <div class="flex flex-col gap-3 text-black">
+              <label
+                for="Phone"
+                class="text-sm font-medium capitalize md:text-base"
+                >Phone: <span class="text-red-400">*</span></label
+              >
+              <input type="number" class="w-full border border-black p-3" />
+            </div>
+
+            <button
+              class="group mr-auto flex cursor-pointer items-center justify-center gap-4 border bg-[#150e1f] px-8 py-4 transition-all duration-300 ease-in-out hover:border-[#150e1f] hover:bg-transparent"
+            >
+              <span
+                class="text-[12px] font-medium tracking-[2px] text-white uppercase transition-colors duration-300 group-hover:text-[#150e1f]"
+              >
+                Submit
+              </span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="h-6 w-6 stroke-white transition-all duration-300 group-hover:stroke-black"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="bg-[#150e1f] py-16">
+    <div
+      class="wrapper-container flex flex-col gap-8 py-12 lg:flex-row lg:items-center lg:justify-between"
+    >
+      <div class="flex flex-col justify-center gap-4 text-center sm:text-start">
+        <a href="/">
+          <img
+            src="./src/assets/images/logo.png"
+            alt="EventLikeaMovie Logo"
+            width="117"
+            height="57"
+            class="mx-auto mb-2 w-full max-w-24 cursor-pointer sm:mx-0 md:max-w-28"
+          />
+        </a>
+
+        <div
+          class="text-[15px] font-normal tracking-normal text-white md:text-base"
+        >
+          <p>Premium Live Stream Event. Company for all event types</p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col gap-8 text-center sm:flex-row sm:justify-between sm:text-start lg:gap-14"
+      >
+        <div class="flex flex-col gap-4 tracking-wider text-white">
+          <h2 class="font-brygada text-xl font-medium">About</h2>
+
+          <ul class="flex flex-col gap-2 text-sm md:text-base">
+            <li class="cursor-pointer">
+              <a href="#" class="cursor-pointer">Our story</a>
+            </li>
+            <li><a href="#" class="cursor-pointer">Pricing</a></li>
+            <li><a href="#" class="cursor-pointer">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-4 tracking-wider text-white">
+          <h2 class="font-brygada text-xl font-medium">Get in touch</h2>
+
+          <ul class="flex flex-col gap-2 text-sm md:text-base">
+            <li class="cursor-pointer">
+              <a href="#" class="cursor-pointer"
+                >24, Floodgate street, Lagos, Nigeria.</a
+              >
+            </li>
+            <li><a href="#" class="cursor-pointer">+234 911 098 4650</a></li>
+            <li>
+              <a href="#" class="cursor-pointer">eventlikeamovie@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-highlight/20 border-t-[0.5px] py-10">
+      <div
+        class="wrapper-container mt-10 flex flex-col items-center justify-between gap-4 text-center sm:flex-row md:text-start"
+      >
+        <p class="text-sm font-normal text-white/80">
+          Copyright © 2026 EventLikeaMovie. Powered by EventLikeaMovie.
+        </p>
+
+        <a
+          href="https://www.instagram.com/eventlikeamovie/"
+          class="cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-instagram-icon lucide-instagram"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>
