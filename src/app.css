@@ -48,6 +48,10 @@
     @apply bg-[url(/src/assets/images/streams-img.jpg)] bg-cover bg-center;
   }
 
+  .contact-img {
+    @apply bg-[url(/src/assets/images/contact-img.jpg)] bg-cover bg-center;
+  }
+
   .featured-stream::before {
     @apply absolute inset-0 bg-[url(/src/assets/images/ribbon.jpg)] bg-cover bg-center;
   }
