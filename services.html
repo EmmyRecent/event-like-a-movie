@@ -54,7 +54,7 @@
           </svg>
         </a>
 
-        <div class="md:hidden">
+        <div class="md:hidden" id="hamburger-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -74,6 +74,70 @@
         </div>
       </nav>
     </header>
+
+    <!-- Mobile navigation overlay -->
+    <div
+      id="mobile-nav"
+      class="absolute top-0 right-0 left-0 z-50 hidden bg-white text-black md:hidden"
+    >
+      <div class="flex h-full w-full flex-col gap-8 bg-white py-8 pr-4 pl-4">
+        <div class="flex items-start justify-between">
+          <button
+            id="mobile-nav-close"
+            aria-label="Close navigation"
+            class="ml-auto translate-1.5 p-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="font-brygada mt-4 flex flex-col gap-6 text-base">
+          <a
+            href="/"
+            class="mobile-nav-link text-highlight transition-colors hover:text-[#4f3ebf]"
+          >
+            Home
+          </a>
+          <a
+            href="/about.html"
+            class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+          >
+            About
+          </a>
+          <a
+            href="/services.html"
+            class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+          >
+            Services
+          </a>
+          <a
+            href="/streams.html"
+            class="mobile-nav-link flex items-center justify-between transition-colors hover:text-[#4f3ebf]"
+          >
+            Streams
+          </a>
+          <a
+            href="/contact.html"
+            class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+    </div>
 
     <!-- Hero  -->
     <div
@@ -461,6 +525,7 @@
         </div>
       </section>
     </main>
+    <script src="./src/script.js"></script>
   </body>
 
   <footer class="bg-[#150e1f] py-16">
@@ -493,10 +558,10 @@
 
           <ul class="flex flex-col gap-2 text-sm md:text-base">
             <li class="cursor-pointer">
-              <a href="#" class="cursor-pointer">Our story</a>
+              <a href="/about.html" class="cursor-pointer">Our story</a>
             </li>
             <li><a href="#" class="cursor-pointer">Pricing</a></li>
-            <li><a href="#" class="cursor-pointer">Contact Us</a></li>
+            <li><a href="/contact.html" class="cursor-pointer">Contact Us</a></li>
           </ul>
         </div>
 

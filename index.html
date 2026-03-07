@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="hero-img min-h-screen">
+    <div class="hero-img relative min-h-screen">
       <header class="wrapper">
         <nav class="flex items-center justify-between py-8 md:py-10">
           <div class="flex items-center justify-center">
@@ -52,11 +52,14 @@
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+            >s
           </a>
 
-          <div class="md:hidden">
+          <div class="absolute"></div>
+
+          <!-- Hamburger icon -->
+          <div class="md:hidden" id="hamburger-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -77,6 +80,70 @@
         </nav>
       </header>
 
+      <!-- Mobile navigation overlay -->
+      <div
+        id="mobile-nav"
+        class="absolute top-0 right-0 left-0 z-50 hidden bg-white text-black md:hidden"
+      >
+        <div class="flex h-full w-full flex-col gap-8 bg-white py-8 pr-4 pl-4">
+          <div class="flex items-start justify-between">
+            <button
+              id="mobile-nav-close"
+              aria-label="Close navigation"
+              class="ml-auto translate-1.5 p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+
+          <nav class="font-brygada mt-4 flex flex-col gap-6 text-base">
+            <a
+              href="/"
+              class="mobile-nav-link text-highlight transition-colors hover:text-[#4f3ebf]"
+            >
+              Home
+            </a>
+            <a
+              href="/about.html"
+              class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+            >
+              About
+            </a>
+            <a
+              href="/services.html"
+              class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+            >
+              Services
+            </a>
+            <a
+              href="/streams.html"
+              class="mobile-nav-link flex items-center justify-between transition-colors hover:text-[#4f3ebf]"
+            >
+              Streams
+            </a>
+            <a
+              href="/contact.html"
+              class="mobile-nav-link transition-colors hover:text-[#4f3ebf]"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
+
       <!-- Hero  -->
       <section>
         <div
@@ -95,7 +162,8 @@
             viewing from the comfort of their home.
           </p>
 
-          <button
+          <a
+            href="/contact.html"
             class="hover:border-whites hero-button group mx-auto mr-auto flex cursor-pointer items-center justify-center gap-4 border bg-white px-8 py-4 transition-all duration-300 ease-in-out hover:bg-transparent md:mx-0"
           >
             <span
@@ -116,7 +184,7 @@
               <path d="M18 8L22 12L18 16" />
               <path d="M2 12H22" />
             </svg>
-          </button>
+          </a>
         </div>
       </section>
     </div>
@@ -245,7 +313,8 @@
             your online streaming needs.
           </p>
 
-          <button
+          <a
+            href="/contact.html"
             class="group mr-auto mb-4 flex cursor-pointer items-center justify-center gap-4 border bg-[#150e1f] px-8 py-4 transition-all duration-300 ease-in-out hover:border-[#150e1f] hover:bg-transparent"
           >
             <span
@@ -266,7 +335,7 @@
               <path d="M18 8L22 12L18 16" />
               <path d="M2 12H22" />
             </svg>
-          </button>
+          </a>
         </div>
 
         <div class="items-start justify-center gap-4 md:flex md:gap-6">
@@ -391,7 +460,7 @@
                 </iframe>
               </div>
 
-              <a href="#" class="group flex items-center gap-2">
+              <a href="/contact.html" class="group flex items-center gap-2">
                 <span
                   class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
                   >Book yours now</span
@@ -441,7 +510,7 @@
                 </iframe>
               </div>
 
-              <a href="#" class="group flex items-center gap-2">
+              <a href="/contact.html" class="group flex items-center gap-2">
                 <span
                   class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
                   >Book yours now</span
@@ -491,7 +560,7 @@
                 </iframe>
               </div>
 
-              <a href="#" class="group flex items-center gap-2">
+              <a href="/contact.html" class="group flex items-center gap-2">
                 <span
                   class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
                   >Book yours now</span
@@ -541,7 +610,7 @@
                 </iframe>
               </div>
 
-              <a href="#" class="group flex items-center gap-2">
+              <a href="/contact.html" class="group flex items-center gap-2">
                 <span
                   class="text-xs tracking-wider text-white/80 uppercase transition-all duration-300 group-hover:text-white"
                   >Book yours now</span
@@ -749,6 +818,7 @@
         </div>
       </div>
     </section>
+    <script src="./src/script.js"></script>
   </body>
 
   <footer class="bg-[#150e1f] py-16">
@@ -781,10 +851,12 @@
 
           <ul class="flex flex-col gap-2 text-sm md:text-base">
             <li class="cursor-pointer">
-              <a href="#" class="cursor-pointer">Our story</a>
+              <a href="/about.html" class="cursor-pointer">Our story</a>
             </li>
             <li><a href="#" class="cursor-pointer">Pricing</a></li>
-            <li><a href="#" class="cursor-pointer">Contact Us</a></li>
+            <li>
+              <a href="/contact.html" class="cursor-pointer">Contact Us</a>
+            </li>
           </ul>
         </div>
 
