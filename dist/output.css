@@ -902,11 +902,6 @@
       padding-top: calc(var(--spacing) * 14);
     }
   }
-  .md\:pt-90 {
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 90);
-    }
-  }
   .md\:text-start {
     @media (width >= 48rem) {
       text-align: start;
