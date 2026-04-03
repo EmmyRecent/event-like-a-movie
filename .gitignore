@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+node_modules/
+.vscode/
+
 # next.js
 /.next/
 /out/
@@ -30,7 +33,6 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-/vscode
 
 # env files (can opt-in for committing if needed)
 .env*
